@@ -1,9 +1,16 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import ApplicationBar from './components/AppBar';
 
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import WhatWeGrow from './pages/WhatWeGrow';
 
 
 import Header from './Header';
@@ -27,18 +34,17 @@ const social = [
 ];
 
 
+
 export default function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Container maxWidth="lg">
-        <Header title="Golden Nectar Farm" sections={sections} social={social} />      
-        <Blog/>
-        </Container>
-      <Footer
-        // title="Footer"
-        // description="Something here to give the footer a purpose!"
-      />
-    </ThemeProvider>
+    <div className="App">
+      <ApplicationBar />
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/About" element={<About/>}/>
+        <Route path="/WhatWeGrow" element={<WhatWeGrow />}/>
+        <Route path="/Contact" element={<Contact />}/>
+      </Routes>
+      </div>
   );
 }
