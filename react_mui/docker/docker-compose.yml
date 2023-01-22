@@ -1,0 +1,34 @@
+# This docker-compose file is used by developers to locally run the map server stack.
+# It has volume mounts for source code and persistence.
+version: '3.9'
+services:
+  node:
+    container_name: node
+    image: node
+    hostname: node
+    volumes:
+      - ${GNF_DIR}/create-react-app:/home/node/app
+      - usr-local:/usr/local
+    ports:
+      - '127.0.0.1:3000:3000'
+      - 8080:80
+    networks:
+      - app_net
+    env_file:
+      - .env
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    expose:
+      - "8081"
+    command: "npm start"
+
+volumes:
+  usr-local:
+    labels:
+      persistent: true
+
+networks:
+  app_net:
+    driver: bridge
