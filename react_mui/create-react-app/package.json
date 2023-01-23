@@ -13,13 +13,12 @@
     "@emotion/styled": "latest",
     "@mui/material": "latest",
     "@mui/icons-material": "latest",
-    "markdown-to-jsx": "latest",
-    "mui-markdown": "latest",
     "react-markdown": "latest",
     "react": "latest",
     "react-dom": "latest",
     "react-router-dom": "latest",
-    "react-scripts": "latest"
+    "react-scripts": "latest",
+    "react-material-ui-carousel":"v2mui5"
   },
   "browserslist": {
     "production": [

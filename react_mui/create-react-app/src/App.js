@@ -9,6 +9,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Photos from './pages/Photos';
+import Video from './pages/Video';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import WhatWeGrow from './pages/WhatWeGrow';
@@ -18,16 +19,8 @@ import Header from './Header';
 import Footer from './Footer';
 
 import * as React from 'react';
-import Blog from './Blog';
 
 const theme = createTheme();
-
-const sections = [
-  { title: 'The Farm', url: '#' },
-  { title: 'What We Grow', url: '#' },
-  { title: 'Instagram', url: 'https://www.instagram.com/goldennectarfarm/' },
-  { title: 'Facebook', url: 'https://www.facebook.com/pages/Golden-Nectar-Farm/157366357790557' },
-];
 
 const social = [
   { name: 'Instagram', icon: InstagramIcon, url: 'https://www.instagram.com/goldennectarfarm/' },
@@ -36,6 +29,23 @@ const social = [
 
 const contact_info = "info@goldennectarfarm.com"
 
+const images = [
+  {name: "The house", 
+   description: "The main house has a big A-Frame living room.",
+   image: "house_garden.png"},
+  {name: "Front Porch", 
+   description: "",
+   image: "front_porch.png"},
+   {name: "Aerial Photo", 
+   description: "",
+   image: "aerial_1.png"},
+   {name: "Aerial Photo", 
+   description: "",
+   image: "aerial_2.png"},
+   {name: "Aerial Photo", 
+   description: "",
+   image: "aerial_3.png"}
+]
 
 export default function App() {
   return (
@@ -45,7 +55,8 @@ export default function App() {
       <Container maxWidth="lg">
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/Photos" element={<Photos />}/>
+        <Route path="/Photos" element={<Photos images={images}/>}/>
+        <Route path="/Video" element={<Video />}/>
         <Route path="/About" element={<About/>}/>
         <Route path="/WhatWeGrow" element={<WhatWeGrow />}/>
         <Route path="/Contact" element={<Contact />}/>

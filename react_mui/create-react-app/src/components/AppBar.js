@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 
 const pages = [{name:"Home", path: ""}, 
                {name:"Photos", path: "Photos"},
+               {name:"Video", path: "Video"},
                {name:"About the Farm", path: "About"},
                {name:"What We Grow", path: "WhatWeGrow"},
                {name: "Contact Us", path: "Contact"}];
