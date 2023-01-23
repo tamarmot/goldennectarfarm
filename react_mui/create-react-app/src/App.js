@@ -8,6 +8,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
+import Photos from './pages/Photos';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import WhatWeGrow from './pages/WhatWeGrow';
@@ -44,6 +45,7 @@ export default function App() {
       <Container maxWidth="lg">
       <Routes>
         <Route path="/" element={<Home/>}/>
+        <Route path="/Photos" element={<Photos />}/>
         <Route path="/About" element={<About/>}/>
         <Route path="/WhatWeGrow" element={<WhatWeGrow />}/>
         <Route path="/Contact" element={<Contact />}/>

@@ -1,14 +1,13 @@
-import { AppBar, Button,  Divider,  Drawer, IconButton,  List,  ListItem,  ListItemIcon,  ListItemText,  Menu, MenuItem, Toolbar, Typography } from "@mui/material";
+import { AppBar, Button,  Divider,  Drawer, IconButton,  List,  ListItem,  ListItemText,  Toolbar, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { useState } from "react";
-// import LenneyFace from "./assets/LennyFace.jpeg";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { styled, useTheme } from '@mui/material/styles';
-import { Air, ListAlt } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 const pages = [{name:"Home", path: ""}, 
+               {name:"Photos", path: "Photos"},
                {name:"About the Farm", path: "About"},
                {name:"What We Grow", path: "WhatWeGrow"},
                {name: "Contact Us", path: "Contact"}];
@@ -48,7 +47,6 @@ function ApplicationBar() {
                     sx={{mr: 2, display: {xs: "none", md: "flex"}}}
                 >  
                     Golden Nectar Farm
-                    {/* <img src={LenneyFace} style={{width: 120, height: 40}} alt="LENNY FACE"/> */}
                 </Typography>
                 <Box sx={{flexGrow: 1, display: {xs: "flex", md: "none"}}}>
                 <IconButton
