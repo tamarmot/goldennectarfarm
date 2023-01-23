@@ -1,7 +1,7 @@
 import React, { Component} from 'react';
 import ReactMarkdown from 'react-markdown';
 
-import food from './WhatWeGrow.md';
+import food from './markdown/WhatWeGrow.md';
 
 
 class WhatWeGrow extends Component {

@@ -33,18 +33,24 @@ const social = [
   { name: 'Facebook', icon: FacebookIcon, url: 'https://www.facebook.com/pages/Golden-Nectar-Farm/157366357790557' },
 ];
 
+const contact_info = "info@goldennectarfarm.com"
 
 
 export default function App() {
   return (
     <div className="App">
+      <CssBaseline>
       <ApplicationBar />
+      <Container maxWidth="lg">
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/About" element={<About/>}/>
         <Route path="/WhatWeGrow" element={<WhatWeGrow />}/>
         <Route path="/Contact" element={<Contact />}/>
       </Routes>
+      <Footer description={contact_info}/>
+      </Container>
+      </CssBaseline>
       </div>
   );
 }

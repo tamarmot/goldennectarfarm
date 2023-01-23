@@ -9,7 +9,7 @@ import { Air, ListAlt } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 const pages = [{name:"Home", path: ""}, 
-               {name:"About", path: "About"},
+               {name:"About the Farm", path: "About"},
                {name:"What We Grow", path: "WhatWeGrow"},
                {name: "Contact Us", path: "Contact"}];
 
