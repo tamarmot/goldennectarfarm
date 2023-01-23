@@ -8,7 +8,6 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
 import Sidebar from './Sidebar';
-import morning_fountain from '../images/morning_fountain.png'; // Tell webpack this JS file uses this image
 
 
 const sections = [
@@ -20,7 +19,7 @@ const mainFeaturedPost = {
   title: 'A sustainable biodiverse sanctuary.',
   description:
     "Using the principles of permaculture and regenerative farming, Golden Nectar Farm has more than 150 fruit trees, table grapes and kiwi fruit; berries and an ample vegetable garden.",
-  image: {morning_fountain},
+  image: process.env.PUBLIC_URL + '/images/photos/morning_fountain.png',
   imageText: 'main image description',
   // linkText: 'What we grow...',
 };
