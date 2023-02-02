@@ -11,14 +11,15 @@
   "dependencies": {
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
-    "@mui/material": "latest",
     "@mui/icons-material": "latest",
-    "react-markdown": "latest",
+    "@mui/material": "latest",
+    "mui-image": "^1.0.7",
     "react": "latest",
     "react-dom": "latest",
+    "react-markdown": "latest",
+    "react-material-ui-carousel": "v2mui5",
     "react-router-dom": "latest",
-    "react-scripts": "latest",
-    "react-material-ui-carousel":"v2mui5"
+    "react-scripts": "latest"
   },
   "browserslist": {
     "production": [

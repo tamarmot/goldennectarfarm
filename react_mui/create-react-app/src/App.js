@@ -44,7 +44,18 @@ const images = [
    image: "aerial_2.png"},
    {name: "Aerial Photo", 
    description: "",
-   image: "aerial_3.png"}
+   image: "aerial_3.png"},
+   {name: "Garden view of the house", 
+   description: "",
+   image: "house.png"},
+   {name: "Straw Bale Casita", 
+   description: "aka the Smurf House",
+   image: "smurf_house.png"},
+   {name: "Yurt", 
+   description: "",
+   image: "yurt.png"}
+
+
 ]
 
 export default function App() {

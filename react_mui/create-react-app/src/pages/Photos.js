@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
-import { Paper, Button } from '@mui/material'
+import { Paper, Button, Box } from '@mui/material'
+import { Image } from 'mui-image'
 
 
 function Photos(props)
@@ -21,11 +22,17 @@ function Photos(props)
 function Item(props)
 {
     const {item} = props;
+    function get_image_url(image_name) {
+        return process.env.PUBLIC_URL + '/images/photos/' +image_name
+    }
+
     return (
-        <Paper>
+        <Paper sx={{
+            // backgroundImage: `{get_image_url(item.image)}`,
+        }}>
             <h2>{item.name}</h2>
-            <p>{item.description}</p>
-            <img style={{ display: 'none' }} src={process.env.PUBLIC_URL + "/images/photos/" + item.image} alt={item.name} />
+            <p>{item.description}</p>            
+            <Image src={process.env.PUBLIC_URL + "/images/photos/" + item.image} alt={item.name} height="40%" />
         </Paper>
     )
 }
