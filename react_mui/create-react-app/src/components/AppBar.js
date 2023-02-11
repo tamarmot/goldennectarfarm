@@ -45,34 +45,41 @@ function ApplicationBar() {
                 <Typography
                     noWrap
                     component="div"
-                    sx={{mr: 2, display: {xs: "none", md: "flex"}}}
+                    sx={{mr: 2, display: {xs: "none", md: "flex", fontSize: '1.5rem', paddingBottom: '6px'}}}
                 >  
                     Golden Nectar Farm
                 </Typography>
-                <Box sx={{flexGrow: 1, display: {xs: "flex", md: "none"}}}>
+                <Box sx={{flexGrow: 1, display: {xs: "flex", md: "none"}}}>                
                 <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleDrawerOpen}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
+                  size="large"
+                  aria-label="account of current user"
+                  aria-controls="menu-appbar"
+                  aria-haspopup="true"
+                  onClick={handleDrawerOpen}
+                  color="inherit"
+                >
+                  <MenuIcon />
+                  <Typography
+                        noWrap
+                        component="div"
+                        sx={{mr: 2, display: {xs: "flex", md: "none", fontSize: '1.5rem', paddingLeft: '10px'}}}
+                    >  
+                        Golden Nectar Farm
+                    </Typography>
+                </IconButton>
                 </Box>
                 <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page.name}
-                component={Link}
-                to={`/${page.path}`}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page.name}
-              </Button>
-            ))}
-          </Box>
+                  {pages.map((page) => (
+                    <Button
+                      key={page.name}
+                      component={Link}
+                      to={`/${page.path}`}
+                      sx={{ my: 2, color: 'white', display: 'block' }}
+                    >
+                      {page.name}
+                    </Button>
+                  ))}
+                </Box>
             </Toolbar>
         </AppBar>
      </Box>
