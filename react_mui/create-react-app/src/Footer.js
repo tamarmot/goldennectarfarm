@@ -13,7 +13,8 @@ function Copyright() {
         Golden Nectar Farm
       </Link>{' '}
       {new Date().getFullYear()}
-      {'.'}
+      {'.'}<br/>
+        Favicon {'©'} 2020 Twitter, Inc and others
     </Typography>
   );
 }

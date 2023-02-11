@@ -57,20 +57,21 @@ Black Royalty, Yellow Fallgold
 Fern
 
 ### Other Berries
-Elderberry  
-Jostaberry
+ * Elderberry  
+ * Goji Berry
+ * Hawthorn
+ * Jostaberry
 
 ### Currants
-Cherry, Redlake, Wilder, Pink, White, Jostaberry, Black, White Imperial, Crandall
+Cherry, Redlake, Wilder, Pink, White, Black, White Imperial, Crandall
 
 ## Other Fruit
- * Hawthorne
  * Chinese Wolfberry
  * Feijoa (Pineapple Guava)
  * Jujube (Chinese Red Date)
  * Kiwi: Chinese Gooseberry (Hardy Kiwi)
  * Loquat
  * Mulberry
- * Paw Paw
  * Olive
-
+ * Paw Paw
+ 

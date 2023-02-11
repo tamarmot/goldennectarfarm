@@ -16,6 +16,7 @@
     "mui-image": "^1.0.7",
     "react": "latest",
     "react-dom": "latest",
+    "react-iframe": "^1.8.5",
     "react-markdown": "latest",
     "react-material-ui-carousel": "v2mui5",
     "react-router-dom": "latest",

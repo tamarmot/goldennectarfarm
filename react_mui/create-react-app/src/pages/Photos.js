@@ -28,11 +28,18 @@ function Item(props)
 
     return (
         <Paper sx={{
-            // backgroundImage: `{get_image_url(item.image)}`,
+            position: 'relative',
+            // backgroundColor: 'grey.800',
+            // color: '#fff',
+            mb: 4,
+            backgroundSize: '80%',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundImage: `{get_image_url(item.image)}`,
         }}>
             <h2>{item.name}</h2>
             <p>{item.description}</p>            
-            <Image src={process.env.PUBLIC_URL + "/images/photos/" + item.image} alt={item.name} height="40%" />
+            <Image src={process.env.PUBLIC_URL + "/images/photos/" + item.image} alt={item.name}  />
         </Paper>
     )
 }

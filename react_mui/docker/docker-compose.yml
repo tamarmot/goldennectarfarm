@@ -12,8 +12,6 @@ services:
     ports:
       - '127.0.0.1:3000:3000'
       - 8080:80
-    networks:
-      - app_net
     env_file:
       - .env
     user: "node"
@@ -29,6 +27,3 @@ volumes:
     labels:
       persistent: true
 
-networks:
-  app_net:
-    driver: bridge
