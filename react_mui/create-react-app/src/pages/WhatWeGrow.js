@@ -3,6 +3,13 @@ import ReactMarkdown from 'react-markdown';
 
 import food from './markdown/WhatWeGrow.md';
 
+function LinkRenderer(props) {
+  return (
+    <a href={props.href} target="_blank" rel="noreferrer" style={{color:'#40728d', textDecoration:'none', fontWeight:700}}>
+      {props.children}
+    </a>
+  );
+}
 
 class WhatWeGrow extends Component {
 
@@ -18,7 +25,8 @@ class WhatWeGrow extends Component {
 
   render() {
     const { markdown } = this.state;
-    return <ReactMarkdown children={markdown} />;
+    return <ReactMarkdown     components={{ a: LinkRenderer}}
+       children={markdown} />;
   }
 }
 

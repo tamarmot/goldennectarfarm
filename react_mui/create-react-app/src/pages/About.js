@@ -3,8 +3,16 @@ import ReactMarkdown from 'react-markdown';
 
 import food from './markdown/About.md';
 
+function LinkRenderer(props) {
+  return (
+    <a href={props.href} target="_blank" rel="noreferrer" style={{color:'#40728d', textDecoration:'none', fontWeight:700}}>
+      {props.children}
+    </a>
+  );
+}
 
 class About extends Component {
+
 
   constructor() {
     super();
@@ -18,7 +26,9 @@ class About extends Component {
 
   render() {
     const { markdown } = this.state;
-    return <ReactMarkdown children={markdown} />;
+    return <ReactMarkdown  
+    components={{ a: LinkRenderer}}
+    children={markdown}/>
   }
 }
 
