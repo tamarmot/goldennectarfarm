@@ -18,14 +18,8 @@ function FeaturedPost(props) {
             <Typography component="h2" variant="h5">
               {post.title}
             </Typography>
-            <Typography variant="subtitle1" color="text.secondary">
-              {post.date}
-            </Typography>
             <Typography variant="subtitle1" paragraph>
               {post.description}
-            </Typography>
-            <Typography variant="subtitle1" color="primary">
-              Continue reading...
             </Typography>
           </CardContent>
           <CardMedia
@@ -42,7 +36,6 @@ function FeaturedPost(props) {
 
 FeaturedPost.propTypes = {
   post: PropTypes.shape({
-    date: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     imageLabel: PropTypes.string.isRequired,

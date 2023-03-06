@@ -8,38 +8,34 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
 import Sidebar from './Sidebar';
+import SubHeader from './SubHeader';
 
-
-const sections = [
-  { title: 'The Farm', url: '#' },
-  { title: 'What We Grow', url: '#' },
-];
+import morning_fountain from '../images/morning_fountain.png';
+import front_porch from '../images/front_porch.png';
+import smurf_house from '../images/smurf_house.png';
 
 const mainFeaturedPost = {
   title: 'A sustainable biodiverse sanctuary.',
   description:
-    "Using the principles of permaculture and regenerative farming, Golden Nectar Farm has more than 150 fruit trees, table grapes and kiwi fruit; berries and an ample vegetable garden.",
-  image: process.env.PUBLIC_URL + '/images/photos/morning_fountain.png',
-  imageText: 'main image description',
-  // linkText: 'What we grow...',
+    "Using the principles of permaculture and regenerative farming, Golden Nectar Farm has more than 160 fruit trees, table grapes and kiwi fruit; berries and an ample vegetable garden.",
+  image: morning_fountain,
+  imageText: 'Fountain',
 };
 
 const featuredPosts = [
   {
-    title: 'Featured post',
-    date: 'Nov 12',
+    title: 'Just getting set up!',
     description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    image: 'https://source.unsplash.com/random',
-    imageLabel: 'Image Text',
+      'Don and Tamar recently purchased the farm!  We are getting our hands dirty and getting to know the land and the plants.',
+    image: front_porch,
+    imageLabel: 'Front Porch',
   },
   {
-    title: 'Post title',
-    date: 'Nov 11',
+    title: 'Explore our new website.',
     description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    image: 'https://source.unsplash.com/random',
-    imageLabel: 'Image Text',
+    'We will be adding photos and updates!',
+    image: smurf_house,
+    imageLabel: 'Straw Bale Casita',
   },
 ];
 
@@ -61,27 +57,32 @@ const sidebar = {
     { title: 'April 1999', url: '#' },
   ],
   social: [
-  ],
+    // { name: 'Instagram', icon: InstagramIcon, url: 'https://www.instagram.com/goldennectarfarm/' },
+    { name: 'Facebook', icon: FacebookIcon, url: 'https://www.facebook.com/GoldenNectar'}
+  ]
 };
 
 const theme = createTheme();
 
 export default function Blog() {
   return (
-        <main>
+    /* -18px only if subheader */
+        <main style={{marginTop:"-18px"}}> 
+          <SubHeader social={sidebar.social} />
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
             {featuredPosts.map((post) => (
               <FeaturedPost key={post.title} post={post} />
             ))}
           </Grid>
-          <Grid container spacing={5} sx={{ mt: 3 }}>
+          {/* <Grid container spacing={5} sx={{ mt: 3 }}>
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}
               archives={sidebar.archives}
+              social={sidebar.social}
             />
-          </Grid>
+          </Grid> */}
         </main>
   );
 }

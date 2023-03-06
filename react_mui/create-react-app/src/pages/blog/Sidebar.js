@@ -26,7 +26,7 @@ function Sidebar(props) {
         </Link>
       ))}
 
-      {/* <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>
+      <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>
         Social
       </Typography>
       {social.map((network) => (
@@ -42,7 +42,7 @@ function Sidebar(props) {
             <span>{network.name}</span>
           </Stack>
         </Link>
-      ))} */}
+      ))}
     </Grid>
   );
 }
@@ -55,13 +55,13 @@ Sidebar.propTypes = {
     }),
   ).isRequired,
   description: PropTypes.string.isRequired,
-  // social: PropTypes.arrayOf(
-  //   PropTypes.shape({
-  //     icon: PropTypes.elementType.isRequired,
-  //     name: PropTypes.string.isRequired,
-  //     url: PropTypes.string.isRequired,
-  //   }),
-  // ).isRequired,
+  social: PropTypes.arrayOf(
+    PropTypes.shape({
+      icon: PropTypes.elementType.isRequired,
+      name: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
   title: PropTypes.string.isRequired,
 };
 
