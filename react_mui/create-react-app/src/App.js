@@ -20,42 +20,50 @@ import Footer from './Footer';
 
 import * as React from 'react';
 
+import aerial_1 from "./pages/images/aerial_1.png";
+import aerial_2 from "./pages/images/aerial_2.png";
+import aerial_3 from "./pages/images/aerial_3.png";
+import front_porch from './pages/images/front_porch.png';
+import house_garden from './pages/images/house_garden.png';
+import house from './pages/images/house.png';
+import morning_fountain from './pages/images/morning_fountain.png';
+import smurf_house from './pages/images/smurf_house.png';
+import yurt from './pages/images/yurt.png';
+
+
 const theme = createTheme();
 
-const social = [
-  { name: 'Instagram', icon: InstagramIcon, url: 'https://www.instagram.com/goldennectarfarm/' },
-  { name: 'Facebook', icon: FacebookIcon, url: 'https://www.facebook.com/pages/Golden-Nectar-Farm/157366357790557' },
-];
 
 const contact_info = "info@goldennectarfarm.com"
 
 const images = [
   {name: "The house", 
    description: "The main house has a big A-Frame living room.",
-   image: "house_garden.png"},
+   image: house_garden},
   {name: "Front Porch", 
    description: "",
-   image: "front_porch.png"},
+   image: front_porch},
    {name: "Aerial Photo", 
    description: "",
-   image: "aerial_1.png"},
+   image: aerial_1},
    {name: "Aerial Photo", 
    description: "",
-   image: "aerial_2.png"},
+   image: aerial_2},
    {name: "Aerial Photo", 
    description: "",
-   image: "aerial_3.png"},
+   image: aerial_3},
    {name: "Garden view of the house", 
    description: "",
-   image: "house.png"},
+   image: house},
+   {name: "Fountain under the Mulberry Tree", 
+   description: "We have two noisy frogs!",
+   image: morning_fountain},
    {name: "Straw Bale Casita", 
    description: "aka the Smurf House",
-   image: "smurf_house.png"},
+   image: smurf_house},
    {name: "Yurt", 
    description: "",
-   image: "yurt.png"}
-
-
+   image: yurt}
 ]
 
 export default function App() {

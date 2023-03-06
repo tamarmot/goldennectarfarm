@@ -22,25 +22,26 @@ function Photos(props)
 function Item(props)
 {
     const {item} = props;
-    function get_image_url(image_name) {
-        return process.env.PUBLIC_URL + '/images/photos/' +image_name
-    }
 
     return (
-        <Paper sx={{
-            position: 'relative',
-            // backgroundColor: 'grey.800',
-            // color: '#fff',
-            mb: 4,
-            backgroundSize: '80%',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
-            backgroundImage: `{get_image_url(item.image)}`,
-        }}>
+        <>
             <h2>{item.name}</h2>
-            <p>{item.description}</p>            
-            <Image src={process.env.PUBLIC_URL + "/images/photos/" + item.image} alt={item.name}  />
-        </Paper>
+
+            <Paper sx={{
+                position: 'relative',
+                // backgroundColor: 'grey.800',
+                // color: '#fff',
+                mb: 4,
+                // backgroundSize: '80%',
+                // minHeight: '400px',
+                // backgroundSize: 'cover',
+                // backgroundRepeat: 'no-repeat',
+                // backgroundPosition: 'center',
+                // backgroundImage: `url(${item.image})`,
+            }}>
+                <Image src={item.image} alt={item.name} style={{minHeight:"768px"}}/>
+            </Paper>
+        </>
     )
 }
 
