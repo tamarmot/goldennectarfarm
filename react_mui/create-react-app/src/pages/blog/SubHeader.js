@@ -10,7 +10,7 @@ function SubHeader(props) {
     const {social} = props;
 
     return (
-        <Grid item xs={12} md={4}>
+        <Stack spacing={3} direction="row" justifyContent="flex-end">
             {social.map((network) => (
                 <Link
                 display="block"
@@ -26,7 +26,7 @@ function SubHeader(props) {
                 </Stack>
                 </Link>
             ))}
-        </Grid>
+        </Stack>
     )
 }
 

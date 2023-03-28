@@ -57,7 +57,7 @@ const sidebar = {
     { title: 'April 1999', url: '#' },
   ],
   social: [
-    // { name: 'Instagram', icon: InstagramIcon, url: 'https://www.instagram.com/goldennectarfarm/' },
+    { name: 'Instagram', icon: InstagramIcon, url: 'https://www.instagram.com/goldennectarfarm' },
     { name: 'Facebook', icon: FacebookIcon, url: 'https://www.facebook.com/GoldenNectar'}
   ]
 };
