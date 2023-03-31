@@ -4,8 +4,8 @@
 
 Golden Nectar Farm was originally planted by [Paul Vossen](http://www.paulvossen.com/), a local fruit tree expert and University of California Cooperative Extension Farm Advisor.  He focused on planting a diverse orchard of trees that thrive in Sonoma County, a large blueberry garden, and many table grape vines.
 
-John and Ana Stayton spent 27 years cultivating the farm, applying principles of permaculture and renegerative farming.  They opened the farm to the local community, and hosted many [WWOOFers](https://wwoof.net/).  The blueberries were replaced with an ample vegetable garden, and the orchard trees benefitted from composting and companion planting.
+John and Ana Stayton spent 27 years cultivating the farm, applying principles of permaculture and renegerative farming.  They opened the farm to the local community, and hosted many [WWOOFers](https://wwoof.net/).  Peggy Rose enjoyed living in the [Yome](https://redskyshelters.com/) for 7 years, tending the orchard and gardens.  The blueberries were replaced with an ample vegetable garden, and the orchard trees benefitted from composting and companion planting.
 
-John and Ana also focused on sustainable and ecological choices, including a straw bale structure, a cob structure, a yurt; [Eco-Shake](https://www.ecoshakeshingles.com/) roofing shingles and solar panels among other improvements.
+John and Ana also focused on sustainable and ecological choices, including a straw bale structure, a cob structure, [Eco-Shake](https://www.ecoshakeshingles.com/) roofing shingles and solar panels among other improvements.
 
 Tamar Cohen and Don Gates are the new stewards of the farm, and look forward to growing with it!
